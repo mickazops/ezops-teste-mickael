@@ -4,5 +4,5 @@ files:
   - source: /app/
 hooks:
   ApplicationStart:
-    - location: npm run dev
+    - location: run.sh
       timeout: 180
