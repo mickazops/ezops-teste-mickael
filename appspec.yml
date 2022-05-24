@@ -5,7 +5,7 @@ files:
     destination: /app
 hooks:
   ApplicationStop:
-    = location: /scripts/stop_dockers
+    - location: /scripts/stop_dockers
       timeout: 300
       runas: root
   Install:
