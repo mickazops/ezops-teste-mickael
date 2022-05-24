@@ -4,12 +4,12 @@ files:
   - source: /
     destination: /
 hooks:
-  BeforeInstall:
+  Install:
     - location: /scripts/install_dependencies
       timeout: 300
-  ApplicationStart:
+  AfterInstall:
     - location: /scripts/generate_docker
       timeout: 300
-  ApplicationStop:
+  ApplicationStart:
     - location: /scripts/run_docker
       timeout: 300
