@@ -7,11 +7,8 @@ hooks:
   BeforeInstall:
     - location: /scripts/install_dependencies
       timeout: 300
-      runas: root
     - location: /scripts/generate_docker
       timeout: 300
-      runas: root
   ApplicationStop:
     - location: /scripts/run_docker
       timeout: 300
-      runas: root
