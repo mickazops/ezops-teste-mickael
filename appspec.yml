@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /app
+    destination: /ezops
 hooks:  
   Install:
     - location: /scripts/generate_docker
