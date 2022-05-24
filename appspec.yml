@@ -5,14 +5,10 @@ files:
     destination: /app
 hooks:
   Install:
-    - location: /scripts/install_dependencies
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: /scripts/generate_docker
+    - location: /app/scripts/generate_docker
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: /scripts/run_docker
+    - location: /app/scripts/run_docker
       timeout: 300
       runas: root
