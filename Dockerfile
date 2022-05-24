@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:14-alpin
+FROM node:14.19.3
 
 COPY . .
 
