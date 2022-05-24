@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /app
 hooks:
+  ApplicationStop:
+    = location: /scripts/stop_dockers
+      timeout: 300
+      runas: root
   Install:
     - location: /scripts/generate_docker
       timeout: 300
