@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t ezops-micka .
+sudo docker build -t ezops-micka .
