@@ -1,3 +1,2 @@
 #!/bin/bash
-sudo docker login
-sudo docker run -dp 3000:3000 ezops-teste
+sudo docker run -dp 3000:3000 get-start
