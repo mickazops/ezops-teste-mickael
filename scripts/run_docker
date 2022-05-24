@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker run -dp 3000:3000 ezops-mickael
+sudo docker run -dp 3000:3000 ezops-teste

@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t ezops-mickael .
+sudo docker build -t ezops-teste .
