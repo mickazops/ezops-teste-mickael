@@ -3,12 +3,10 @@ FROM node:12-alpine
 
 RUN apk add --no-cache python2 g++ make
 
-COPY package.json .
+COPY . .
 
 RUN npm install
 
-COPY . .
+CMD ["node", "server.js"]
 
 EXPOSE 3000
-
-CMD ["node", "server.js"]
