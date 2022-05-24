@@ -4,10 +4,6 @@ files:
   - source: /
     destination: /ezops
 hooks:  
-  # ApplicationStop:
-  #   - location: /scripts/stop_docker
-  #     timeout: 300
-  #     runas: root
   Install:
     - location: /scripts/generate_docker
       timeout: 300
