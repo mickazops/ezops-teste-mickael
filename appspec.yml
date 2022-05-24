@@ -3,11 +3,7 @@ os: linux
 files:
   - source: /
     destination: /app
-hooks:
-  ApplicationStop:
-    - location: /scripts/stop_dockers
-      timeout: 300
-      runas: root
+hooks:  
   Install:
     - location: /scripts/generate_docker
       timeout: 300
