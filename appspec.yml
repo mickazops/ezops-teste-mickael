@@ -8,7 +8,7 @@ hooks:
     - location: /scripts/stop_docker
       timeout: 300
       runas: root
-  Install:
+  AfterInstall:
     - location: /scripts/generate_docker
       timeout: 300
       runas: root
