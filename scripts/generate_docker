@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t ezops-micka /ezops > /logs/build.log
+sudo docker build -t ezops:latest /ezops > /logs/build.log
